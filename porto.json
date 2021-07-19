@@ -1,0 +1,14 @@
+{
+	"portofolio":[
+	{"judul":"Personal Website","project":"Website","desc":"Simple Personal Web Page built with HTML, CSS, & JS","gambar":"https://i.imgur.com/aPn13gT.png","link":"https://github.com/fikriomar16/fikriomar16.github.io"},
+	{"judul":"Sistem Rekomendasi Smartphone Android","project":"Codeigniter","desc":"Sistem rekomendasi smartphone android berbasis web menggunakan metode SMART","gambar":"https://i.imgur.com/nTo2Ia3.png","link":"https://github.com/fikriomar16/smart"},
+	{"judul":"Linux Theme Generator for Openbox","project":"Bash (Shell Scripting)","desc":"Generator tema untuk linux terkhusus yang menggunakan window manager openbox","gambar":"https://raw.githubusercontent.com/fikriomar16/obtgen/master/preview/preview-obtgen-wal.png","link":"https://github.com/fikriomar16/obtgen"},
+	{"judul":"MPD Applet","project":"Python","desc":"Indicator applet untuk pemutar musik MPD pada linux","gambar":"https://github.com/fikriomar16/mpd-applet/raw/master/preview.png","link":"https://github.com/fikriomar16/mpd-applet"},
+	{"judul":"Rofi-MPD","project":"Bash","desc":"Shell script for mpd that uses rofi to add songs, albums, playlist, jump to a song in the current playlist etc.","gambar":"https://github.com/fikriomar16/rofi-mpd/raw/master/preview1.png","link":"https://github.com/fikriomar16/rofi-mpd"},
+	{"judul":"Mafetch","project":"Bash","desc":"System info for Unix-like operating systems.","gambar":"https://github.com/fikriomar16/mafetch/raw/master/preview2.png","link":"https://github.com/fikriomar16/mafetch"},
+	{"judul":"NCMPCPP with Albumart","project":"Bash","desc":"Showing album art in ncmpcpp using urxvt","gambar":"https://github.com/fikriomar16/ncmpcpp-with-albumart/raw/master/preview.png","link":"https://github.com/fikriomar16/ncmpcpp-with-albumart"},
+	{"judul":"Instaget","project":"Bash","desc":"Skrip sederhana untuk mendownload gambar dari instagram","gambar":"https://github.com/fikriomar16/instaget/raw/master/preview.png","link":"https://github.com/fikriomar16/instaget"},
+	{"judul":"Project Kerja Praktik","project":"PHP Native","desc":"Sistem pengadaan barang berbasis web","gambar":"https://raw.githubusercontent.com/fikriomar16/kp/master/assets/images/puskesmasbanner1.png","link":"https://github.com/fikriomar16/kp"},
+	{"judul":"Dotfiles","project":"Bash","desc":"Kumpulan file konfigurasi yang digunakan dalam OS GNU/Linux saya","gambar":"https://i.imgur.com/SEW5saE.png","link":"https://github.com/fikriomar16/dotfiles"}
+	]
+}

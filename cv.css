@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background: linear-gradient(0deg, rgba(41,67,138,0.19091386554621848) 0%, rgba(14,14,14,0.7035189075630253) 100%), url("https://i.imgur.com/1Euiz5V.jpg") center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+}
+nav {
+}
+#mainNav.navbar-shrink {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+#mainNav.navbar-shrink .navbar-brand {
+	font-size: 1.5em;
+}
+.nav-item {
+	/*text-shadow: 2px 2px #000;*/
+}
+.gb {
+	background-image: linear-gradient(to right, #499ead, #63409c);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+	transition: background-size .5s ease;
+}
+.gb1 {
+	background-image: linear-gradient(to right, #F16A70, #499ead);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: 50% 2px;
+	transition: background-size .5s ease;
+}
+.line-v {
+	background-image: linear-gradient(to bottom, #499ead, #63409c);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 2px;
+	transition: background-size .5s ease;
+	display: inline-block;
+	position: relative;
+}
+#beranda {
+	width: 100%;
+	height: 100vh;
+}
+#beranda .teks {
+	text-shadow: 5px 5px 9px #000;
+}
+#fotoprofil {
+	filter: grayscale(20%) brightness(80%);
+	height: 190px;
+	width: 190px;
+	object-fit: cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+#pp {
+	border-radius: 6% !important;
+	width: 210px;
+	height: 210px;
+	object-fit: cover;
+	object-position: 0 20%;
+}
+#profil {
+	width: 100%;
+	/*height: 100vh;*/
+}
+#profil .paragraf {
+	text-indent : 35px;
+}
+#qrverif {
+	height: 200px;
+	width:  auto;
+}
+/*--------------------------------------------------------------
+# Study
+--------------------------------------------------------------*/
+.study .study-title {
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #050d18;
+}
+.study .study-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid #1f5297;
+	position: relative;
+}
+.study .study-item h4 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	color: #050d18;
+	margin-bottom: 10px;
+}
+.study .study-item h5 {
+	font-size: 16px;
+	background: #e4edf9;
+	padding: 5px 15px;
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.study .study-item ul {
+	padding-left: 20px;
+}
+.study .study-item ul li {
+	padding-bottom: 10px;
+}
+.study .study-item:last-child {
+	padding-bottom: 0;
+}
+.study .study-item::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	left: -9px;
+	top: 0;
+	background: #fff;
+	border: 2px solid #1f5297;
+}
+.card-img-top {
+	height: 250px;
+	width: auto;
+	object-fit: cover;
+	object-position: center;
+}
