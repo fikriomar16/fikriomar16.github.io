@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0;
 	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -8,8 +11,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
-nav {
+body::-webkit-scrollbar {
+	display: none;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
@@ -17,9 +23,6 @@ nav {
 }
 #mainNav.navbar-shrink .navbar-brand {
 	font-size: 1.5em;
-}
-.nav-item {
-	/*text-shadow: 2px 2px #000;*/
 }
 .gb {
 	background-image: linear-gradient(to right, #499ead, #63409c);
@@ -54,8 +57,6 @@ nav {
 }
 #fotoprofil {
 	filter: grayscale(20%) brightness(80%);
-	height: 190px;
-	width: 190px;
 	object-fit: cover;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -135,4 +136,44 @@ nav {
 	width: auto;
 	object-fit: cover;
 	object-position: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #fotoprofil {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #fotoprofil {
+		height: 130px;
+		width: 130px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#fotoprofil {
+		height: 150px;
+		width: 150px;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #fotoprofil {
+		height: 190px;
+		width: 190px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#fotoprofil {
+		height: 190px;
+		width: 190px;
+	}
 }

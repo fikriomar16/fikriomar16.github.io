@@ -71,17 +71,18 @@ window.addEventListener('DOMContentLoaded', event => {
 // Portofolio Data
 $(document).ready(function() {
 	// Prevent (#) in URL
-	$("a").on('click', function(event) {
+	$(".nav-item a, .navbar-brand").on('click', function(event) {
 		// Store hash
 		var hash = this.hash;
 		if (hash !== "") {
 			// Prevent default anchor click behavior
 			event.preventDefault();
 			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (10) specifies the number of milliseconds it takes to scroll to the specified area
+			// The optional number (Number) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
+				behavior: 'smooth',
 				scrollTop: $(hash).offset().top
-			}, 1500, function(){
+			}, 500, function(){
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				// window.location.hash = hash;
 			});
