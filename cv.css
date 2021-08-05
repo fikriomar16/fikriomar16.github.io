@@ -7,15 +7,29 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	background: linear-gradient(0deg, rgba(41,67,138,0.19091386554621848) 0%, rgba(14,14,14,0.7035189075630253) 100%), url("https://i.imgur.com/1Euiz5V.jpg") center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment:fixed;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
 body::-webkit-scrollbar {
 	display: none;
+}
+.bg-purple {
+	background: #262437;
+	-webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+}
+.bg-custom {
+	background: linear-gradient(0deg, rgba(41,67,138,0.19091386554621848) 0%, rgba(14,14,14,0.7035189075630253) 100%), url("https://i.imgur.com/1Euiz5V.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	-webkit-transition: background 1.5s ease-in-out;
+    -moz-transition: background 1.5s ease-in-out;
+    -o-transition: background 1.5s ease-in-out;
+	transition: background 1.5s ease-in-out;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
@@ -77,6 +91,9 @@ body::-webkit-scrollbar {
 #qrverif {
 	height: 200px;
 	width:  auto;
+}
+#portofolio {
+	transition: 0.5s ease-in-out;
 }
 /*--------------------------------------------------------------
 # Study

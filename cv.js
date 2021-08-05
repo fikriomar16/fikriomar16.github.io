@@ -88,7 +88,30 @@ $(document).ready(function() {
 			});
 		}
 	});
-	setTimeout(function() {portoku();}, 2500);
+	setTimeout(function() {
+		$('body').removeClass('bg-dark');
+		$('body').addClass('bg-custom');
+	}, 100);
+	setTimeout(function() {
+		$('#fotoprofil').removeClass('d-none');
+	}, 800);
+	setTimeout(function() {
+		$('.navbar').removeClass('d-none');
+	}, 1500);
+	setTimeout(function() {
+		$('#textprofil').removeClass('d-none');
+		$('#profil').removeClass('d-none');
+		$('svg').removeClass('d-none');
+		$('#pendidikan').removeClass('d-none');
+		$('#pengalaman').removeClass('d-none');
+		$('#keahlian').removeClass('d-none');
+	}, 2000);
+	setTimeout(function() {
+		$('#portofolio').removeClass('d-none');
+		$('#kontak').removeClass('d-none');
+		$('footer').removeClass('d-none');
+		portoku();
+	}, 2500);
 	function portoku() {
 		var url = "porto.json";
 		$.ajax({
