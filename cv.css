@@ -15,10 +15,10 @@ body::-webkit-scrollbar {
 }
 .bg-purple {
 	background: #262437;
-	-webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-	transition: background 0.5s ease-in-out;
+	-webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
 }
 .bg-custom {
 	background: linear-gradient(0deg, rgba(41,67,138,0.19091386554621848) 0%, rgba(14,14,14,0.7035189075630253) 100%), url("https://i.imgur.com/1Euiz5V.jpg");
@@ -26,10 +26,10 @@ body::-webkit-scrollbar {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
-	-webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-	transition: background 0.5s ease-in-out;
+	-webkit-transition: background 0.25s ease-in-out;
+    -moz-transition: background 0.25s ease-in-out;
+    -o-transition: background 0.25s ease-in-out;
+	transition: background 0.25s ease-in-out;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
@@ -76,14 +76,11 @@ body::-webkit-scrollbar {
 }
 #pp {
 	border-radius: 6% !important;
-	width: 210px;
-	height: 210px;
 	object-fit: cover;
 	object-position: 0 20%;
 }
 #profil {
 	width: 100%;
-	/*height: 100vh;*/
 }
 #profil .paragraf {
 	text-indent : 35px;
@@ -149,7 +146,6 @@ body::-webkit-scrollbar {
 	border: 2px solid #1f5297;
 }
 .card-img-top {
-	height: 250px;
 	width: auto;
 	object-fit: cover;
 	object-position: center;
@@ -161,6 +157,13 @@ body::-webkit-scrollbar {
 		height: 120px;
 		width: 120px;
 	}
+	#pp {
+		width: 140px;
+		height: 140px;
+	}
+	.card-img-top {
+		height: 180px;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -168,6 +171,13 @@ body::-webkit-scrollbar {
     #fotoprofil {
 		height: 130px;
 		width: 130px;
+	}
+	#pp {
+		width: 150px;
+		height: 150px;
+	}
+	.card-img-top {
+		height: 190px;
 	}
 }
 
@@ -177,6 +187,13 @@ body::-webkit-scrollbar {
 		height: 150px;
 		width: 150px;
 	}
+	#pp {
+		width: 170px;
+		height: 170px;
+	}
+	.card-img-top {
+		height: 210px;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -185,6 +202,13 @@ body::-webkit-scrollbar {
 		height: 190px;
 		width: 190px;
 	}
+	#pp {
+		width: 210px;
+		height: 210px;
+	}
+	.card-img-top {
+		height: 250px;
+	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -192,5 +216,12 @@ body::-webkit-scrollbar {
 	#fotoprofil {
 		height: 190px;
 		width: 190px;
+	}
+	#pp {
+		width: 210px;
+		height: 210px;
+	}
+	.card-img-top {
+		height: 250px;
 	}
 }

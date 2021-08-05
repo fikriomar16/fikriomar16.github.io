@@ -97,10 +97,10 @@ $(document).ready(function() {
 	}, 800);
 	setTimeout(function() {
 		$('.navbar').removeClass('d-none');
+		$('svg').removeClass('d-none');
 	}, 1500);
 	setTimeout(function() {
 		$('#profil').removeClass('d-none');
-		$('svg').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
 		$('#pengalaman').removeClass('d-none');
 		$('#keahlian').removeClass('d-none');
