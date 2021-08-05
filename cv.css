@@ -26,10 +26,10 @@ body::-webkit-scrollbar {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
-	-webkit-transition: background 1.5s ease-in-out;
-    -moz-transition: background 1.5s ease-in-out;
-    -o-transition: background 1.5s ease-in-out;
-	transition: background 1.5s ease-in-out;
+	-webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
