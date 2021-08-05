@@ -89,11 +89,11 @@ $(document).ready(function() {
 		}
 	});
 	setTimeout(function() {
-		$('body').removeClass('bg-dark');
 		$('body').addClass('bg-custom');
 	}, 100);
 	setTimeout(function() {
 		$('#beranda').removeClass('d-none');
+		$('body').removeClass('bg-purple');
 	}, 800);
 	setTimeout(function() {
 		$('.navbar').removeClass('d-none');
