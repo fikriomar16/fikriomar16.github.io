@@ -90,11 +90,11 @@ $(document).ready(function() {
 	});
 	setTimeout(function() {
 		$('body').addClass('bg-custom');
-	}, 100);
+	}, 500);
 	setTimeout(function() {
 		$('#beranda').removeClass('d-none');
 		$('body').removeClass('bg-purple');
-	}, 800);
+	}, 1000);
 	setTimeout(function() {
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
