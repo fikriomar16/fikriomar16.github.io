@@ -93,13 +93,12 @@ $(document).ready(function() {
 		$('body').addClass('bg-custom');
 	}, 100);
 	setTimeout(function() {
-		$('#fotoprofil').removeClass('d-none');
+		$('#beranda').removeClass('d-none');
 	}, 800);
 	setTimeout(function() {
 		$('.navbar').removeClass('d-none');
 	}, 1500);
 	setTimeout(function() {
-		$('#textprofil').removeClass('d-none');
 		$('#profil').removeClass('d-none');
 		$('svg').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
