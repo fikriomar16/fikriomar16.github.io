@@ -33,30 +33,35 @@ window.addEventListener('DOMContentLoaded', event => {
 		if (!navbarCollapsible) {
 			return;
 		}
-		if (window.scrollY === 0 || window.scrollY <= 700) {
+		if (window.scrollY === 0 || window.scrollY <= 666) {
 			navbarCollapsible.classList.remove('navbar-shrink');
 			navbarCollapsible.classList.remove('bg-light');
 			navbarCollapsible.classList.remove('navbar-light');
 			navbarCollapsible.classList.add('navbar-dark');
+			$('meta[name=theme-color]').attr('content', '#262437');
 		} else {
 			navbarCollapsible.classList.add('navbar-shrink');
 			navbarCollapsible.classList.add('bg-light');
 			navbarCollapsible.classList.add('navbar-light');
 			navbarCollapsible.classList.remove('navbar-dark');
+			$('meta[name=theme-color]').attr('content', '#323458');
 		}
 	};
 	// Shrink the navbar 
 	navbarShrink();
 	// Shrink the navbar when page is scrolled
 	document.addEventListener('scroll', navbarShrink);
-	// Activate Bootstrap scrollspy on the main nav element
-	const mainNav = document.body.querySelector('#mainNav');
-	if (mainNav) {
-		new bootstrap.ScrollSpy(document.body, {
-			target: '#mainNav',
-			offset: 72,
-		});
-	};
+	// Add delay to activate scrollspy
+	setTimeout(function () {
+		// Activate Bootstrap scrollspy on the main nav element
+		const mainNav = document.body.querySelector('#mainNav');
+		if (mainNav) {
+			new bootstrap.ScrollSpy(document.body, {
+				target: '#mainNav',
+				offset: 72
+			});
+		};
+	},1600);
 	// Collapse responsive navbar when toggler is visible
 	const navbarToggler = document.body.querySelector('.navbar-toggler');
 	const responsiveNavItems = [].slice.call(document.querySelectorAll('#navbarNav .nav-link'));
@@ -92,14 +97,16 @@ $(document).ready(function() {
 		$('body').addClass('bg-custom');
 	}, 500);
 	setTimeout(function() {
-		$('#beranda').removeClass('d-none');
+		$('#fotoprofil').removeClass('d-none');
 		$('body').removeClass('bg-purple');
 	}, 1000);
 	setTimeout(function() {
+		$('#textprofil').removeClass('d-none');
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
 	}, 1500);
 	setTimeout(function() {
+		portoku();
 		$('#profil').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
 		$('#pengalaman').removeClass('d-none');
@@ -109,14 +116,13 @@ $(document).ready(function() {
 		$('#portofolio').removeClass('d-none');
 		$('#kontak').removeClass('d-none');
 		$('footer').removeClass('d-none');
-		portoku();
 	}, 2500);
 	function portoku() {
 		var url = "porto.json";
 		$.ajax({
 			type: "GET",
 			url: url,
-			async: false,
+			async: true,
 			dataType: "json",
 			success: function(data){
 				var dp = data.portofolio;
@@ -127,12 +133,12 @@ $(document).ready(function() {
 					'<div class="card bg-dark border-0 h-100 shadow-lg rounded">'+
 					'<center><img src="'+dp[i].gambar+'" class="card-img-top img-responsive img-fluid"></center>'+
 					'<div class="card-body bg-dark">'+
-					'<h5>'+dp[i].judul+'</h5>'+
-					'<p><strong>Project : </strong>'+dp[i].project+'</p>'+
+					'<h5 class="fw-bold text-info">'+dp[i].judul+'</h5>'+
+					'<p>Project : <strong class="text-warning">'+dp[i].project+'</strong></p>'+
 					'<p><em>'+dp[i].desc+'</em></p>'+
 					'</div>'+
 					'<div class="card-footer bg-dark">'+
-					'<a class="d-flex text-white btn btn-danger justify-content-center" href="'+dp[i].link+'" target="_blank"><i class="bi-cursor-fill"></i>&nbsp;Menuju Project</a>'+
+					'<a class="d-flex text-light btn btn-danger justify-content-center" href="'+dp[i].link+'" target="_blank"><i class="bi-cursor-fill"></i>&nbsp;Menuju Project</a>'+
 					'</div>'+
 					'</div>'+
 					'</div>';

@@ -21,8 +21,8 @@ body::-webkit-scrollbar {
 	transition: background 0.2s ease-in-out;
 }
 .bg-custom {
-	background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(38,36,55,0.2) 100%), url("https://i.imgur.com/fJMaXjz.jpg");
-	/* background: url("https://i.imgur.com/L3J5VAy.jpg"); */
+	/* background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(38,36,55,0.2) 100%), url("https://i.imgur.com/fJMaXjz.jpg"); */
+	background: url("assets/bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -74,6 +74,10 @@ body::-webkit-scrollbar {
 	filter: grayscale(20%) brightness(80%);
 	object-fit: cover;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	transition: 1s;
+}
+#textprofil {
+	transition: 1s;
 }
 #pp {
 	border-radius: 6% !important;
@@ -90,8 +94,12 @@ body::-webkit-scrollbar {
 	height: 200px;
 	width:  auto;
 }
-#portofolio {
-	transition: 0.5s ease-in-out;
+#portofolio .card {
+	transition: 1s ease-in-out;
+}
+#kontak a {
+	text-decoration: none;
+	color: #323458;
 }
 /*--------------------------------------------------------------
 # Study
@@ -163,7 +171,7 @@ body::-webkit-scrollbar {
 		height: 140px;
 	}
 	.card-img-top {
-		height: 180px;
+		height: 190px;
 	}
 }
 
