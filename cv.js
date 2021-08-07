@@ -93,30 +93,43 @@ $(document).ready(function() {
 			});
 		}
 	});
-	setTimeout(function() {
-		$('body').addClass('bg-custom');
-	}, 500);
-	setTimeout(function() {
-		$('#fotoprofil').removeClass('d-none');
+	var urlbgimg = 'assets/bg.jpg';
+	$('#bgimg').attr('src', urlbgimg).on('load', function() {
+		$('body').css('background', 'url("'+urlbgimg+'")');
+		$('body').css('background-position','center center');
+		$('body').css('background-repeat','no-repeat');
+		$('body').css('background-size','cover');
+		$('body').css('background-attachment','fixed');
 		$('body').removeClass('bg-purple');
-	}, 1000);
+		$(this).remove();
+	});
+	setTimeout(function() {
+		var imgpp = document.querySelector('#fotoprofil');
+		if (imgpp.complete) {
+			$('#fotoprofil').removeClass('d-none');
+		} else {
+			// make sure it's loaded
+			$('#fotoprofil').attr('src','assets/photo/fotoprofil.jpg');
+			$('#fotoprofil').removeClass('d-none');
+		}
+	}, 500);
 	setTimeout(function() {
 		$('#textprofil').removeClass('d-none');
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
-	}, 1500);
+	}, 1000);
 	setTimeout(function() {
 		portoku();
 		$('#profil').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
 		$('#pengalaman').removeClass('d-none');
 		$('#keahlian').removeClass('d-none');
-	}, 2000);
+	}, 1500);
 	setTimeout(function() {
 		$('#portofolio').removeClass('d-none');
 		$('#kontak').removeClass('d-none');
 		$('footer').removeClass('d-none');
-	}, 2500);
+	}, 2000);
 	function portoku() {
 		var url = "porto.json";
 		$.ajax({
