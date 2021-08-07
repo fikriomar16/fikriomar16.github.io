@@ -100,6 +100,7 @@ $(document).ready(function() {
 		$('body').css('background-repeat','no-repeat');
 		$('body').css('background-size','cover');
 		$('body').css('background-attachment','fixed');
+		$('body').css('transition','background 0.25s ease-in-out');
 		$('body').removeClass('bg-purple');
 		$(this).remove();
 	});
