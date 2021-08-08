@@ -96,8 +96,6 @@ $(document).ready(function() {
 	var imgpp = document.querySelector('#fotoprofil');
 	setTimeout(function() {
 		$('body').addClass('bg-custom');
-	}, 500);
-	setTimeout(function() {
 		$('#textprofil').removeClass('d-none');
 	}, 1000);
 	setTimeout(function() {
