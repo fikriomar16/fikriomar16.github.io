@@ -93,20 +93,15 @@ $(document).ready(function() {
 			});
 		}
 	});
-	var urlbgimg = 'assets/bg.jpg';
 	var imgpp = document.querySelector('#fotoprofil');
 	setTimeout(function() {
-		$('#bgimg').attr('src', urlbgimg).on('load', function() {
-			$('body').css('background', 'url("'+urlbgimg+'")');
-			$('body').css('background-position','center center');
-			$('body').css('background-repeat','no-repeat');
-			$('body').css('background-size','cover');
-			$('body').css('background-attachment','fixed');
-			// $('body').css('transition','background 0.25s ease-in');
-			$(this).remove();
-		});
-	}, 350);
+		$('body').addClass('bg-custom');
+	}, 500);
 	setTimeout(function() {
+		$('#textprofil').removeClass('d-none');
+	}, 1000);
+	setTimeout(function() {
+		$('#textprofil').removeClass('d-none');
 		if (imgpp.complete) {
 			$('#fotoprofil').removeClass('d-none');
 		} else {
@@ -114,10 +109,6 @@ $(document).ready(function() {
 			$('#fotoprofil').attr('src','assets/photo/fotoprofil.jpg');
 			$('#fotoprofil').removeClass('d-none');
 		}
-		$('body').removeClass('bg-purple');
-	}, 900);
-	setTimeout(function() {
-		$('#textprofil').removeClass('d-none');
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
 	}, 1500);
@@ -132,6 +123,7 @@ $(document).ready(function() {
 		$('#portofolio').removeClass('d-none');
 		$('#kontak').removeClass('d-none');
 		$('footer').removeClass('d-none');
+		$('body').removeClass('bg-purple');
 	}, 2500);
 	function portoku() {
 		var url = "porto.json";
