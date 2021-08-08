@@ -18,9 +18,9 @@ form.addEventListener('submit', e => {
 		$('.btn-loading').toggleClass('d-none');
 		form.reset();
 		$('#myalert').html('<div class="alert alert-success alert-dismissible fade show" role="alert">'+
-			'<strong>Terima Kasih!</strong> Pesan anda sudah terkirim.'+
-			'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'+
-			'</div>');
+		'<strong>Terima Kasih!</strong> Pesan anda sudah terkirim.'+
+		'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>'+
+		'</div>');
 		console.log('Success!', response);
 	})
 	.catch(error => console.error('Error!', error.message))
@@ -94,18 +94,19 @@ $(document).ready(function() {
 		}
 	});
 	var urlbgimg = 'assets/bg.jpg';
-	$('#bgimg').attr('src', urlbgimg).on('load', function() {
-		$('body').css('background', 'url("'+urlbgimg+'")');
-		$('body').css('background-position','center center');
-		$('body').css('background-repeat','no-repeat');
-		$('body').css('background-size','cover');
-		$('body').css('background-attachment','fixed');
-		$('body').css('transition','background 0.25s ease-in-out');
-		$('body').removeClass('bg-purple');
-		$(this).remove();
-	});
+	var imgpp = document.querySelector('#fotoprofil');
 	setTimeout(function() {
-		var imgpp = document.querySelector('#fotoprofil');
+		$('#bgimg').attr('src', urlbgimg).on('load', function() {
+			$('body').css('background', 'url("'+urlbgimg+'")');
+			$('body').css('background-position','center center');
+			$('body').css('background-repeat','no-repeat');
+			$('body').css('background-size','cover');
+			$('body').css('background-attachment','fixed');
+			// $('body').css('transition','background 0.25s ease-in');
+			$(this).remove();
+		});
+	}, 350);
+	setTimeout(function() {
 		if (imgpp.complete) {
 			$('#fotoprofil').removeClass('d-none');
 		} else {
@@ -113,24 +114,25 @@ $(document).ready(function() {
 			$('#fotoprofil').attr('src','assets/photo/fotoprofil.jpg');
 			$('#fotoprofil').removeClass('d-none');
 		}
-	}, 500);
+		$('body').removeClass('bg-purple');
+	}, 900);
 	setTimeout(function() {
 		$('#textprofil').removeClass('d-none');
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
-	}, 1000);
+	}, 1500);
 	setTimeout(function() {
 		portoku();
 		$('#profil').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
 		$('#pengalaman').removeClass('d-none');
 		$('#keahlian').removeClass('d-none');
-	}, 1500);
+	}, 2000);
 	setTimeout(function() {
 		$('#portofolio').removeClass('d-none');
 		$('#kontak').removeClass('d-none');
 		$('footer').removeClass('d-none');
-	}, 2000);
+	}, 2500);
 	function portoku() {
 		var url = "porto.json";
 		$.ajax({

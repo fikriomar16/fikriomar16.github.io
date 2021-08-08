@@ -8,17 +8,16 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	-ms-overflow-style: none;
-	scrollbar-width: none;
 }
 body::-webkit-scrollbar {
 	display: none;
 }
 .bg-purple {
 	background: #262437;
-	-webkit-transition: background 0.2s ease-in-out;
-    -moz-transition: background 0.2s ease-in-out;
-    -o-transition: background 0.2s ease-in-out;
-	transition: background 0.2s ease-in-out;
+	-webkit-transition: background 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+	transition: background 0.2s ease-out;
 }
 .bg-custom {
 	/* background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(38,36,55,0.2) 100%), url("https://i.imgur.com/fJMaXjz.jpg"); */
@@ -27,10 +26,10 @@ body::-webkit-scrollbar {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
-	-webkit-transition: background 0.25s ease-in-out;
-    -moz-transition: background 0.25s ease-in-out;
-    -o-transition: background 0.25s ease-in-out;
-	transition: background 0.25s ease-in-out;
+	-webkit-transition: background 0.25s ease-in;
+    -moz-transition: background 0.25s ease-in;
+    -o-transition: background 0.25s ease-in;
+	transition: background 0.25s ease-in;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
