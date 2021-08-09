@@ -95,11 +95,8 @@ $(document).ready(function() {
 	});
 	var imgpp = document.querySelector('#fotoprofil');
 	setTimeout(function() {
-		$('body').addClass('bg-custom');
-	}, 250);
-	setTimeout(function() {
 		$('#textprofil').removeClass('d-none');
-	}, 1000);
+	}, 500);
 	setTimeout(function() {
 		if (imgpp.complete) {
 			$('#fotoprofil').removeClass('d-none');
@@ -110,20 +107,19 @@ $(document).ready(function() {
 		}
 		$('.navbar').removeClass('d-none');
 		$('svg').removeClass('d-none');
-	}, 1500);
+	}, 1000);
 	setTimeout(function() {
 		portoku();
 		$('#profil').removeClass('d-none');
 		$('#pendidikan').removeClass('d-none');
 		$('#pengalaman').removeClass('d-none');
 		$('#keahlian').removeClass('d-none');
-	}, 2000);
+	}, 1500);
 	setTimeout(function() {
 		$('#portofolio').removeClass('d-none');
 		$('#kontak').removeClass('d-none');
 		$('footer').removeClass('d-none');
-		$('body').removeClass('bg-purple');
-	}, 2500);
+	}, 2000);
 	function portoku() {
 		var url = "porto.json";
 		$.ajax({
