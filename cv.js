@@ -96,10 +96,11 @@ $(document).ready(function() {
 	var imgpp = document.querySelector('#fotoprofil');
 	setTimeout(function() {
 		$('body').addClass('bg-custom');
+	}, 250);
+	setTimeout(function() {
 		$('#textprofil').removeClass('d-none');
 	}, 1000);
 	setTimeout(function() {
-		$('#textprofil').removeClass('d-none');
 		if (imgpp.complete) {
 			$('#fotoprofil').removeClass('d-none');
 		} else {

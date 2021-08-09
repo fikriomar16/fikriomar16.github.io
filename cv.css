@@ -14,15 +14,16 @@ body::-webkit-scrollbar {
 }
 .bg-purple {
 	background: #262437;
-	transition: background 2s ease;
 }
 .bg-custom {
 	/* background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(38,36,55,0.2) 100%), url("https://i.imgur.com/fJMaXjz.jpg"); */
-	background: url("assets/bg.jpg");
+	background: #262437;
+	background-image: url("assets/bg.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
+	transition: background 2s ease;
 }
 #mainNav.navbar-shrink {
 	padding-top: 0.5rem;
