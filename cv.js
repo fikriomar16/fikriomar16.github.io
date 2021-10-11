@@ -33,14 +33,14 @@ window.addEventListener('DOMContentLoaded', event => {
 		if (!navbarCollapsible) {
 			return;
 		}
-		if (window.scrollY === 0 || window.scrollY <= 666) {
-			navbarCollapsible.classList.remove('navbar-shrink');
+		if (window.scrollY === 0 || window.scrollY < 660) {
+			navbarCollapsible.classList.add('navbar-shrink');
 			navbarCollapsible.classList.remove('bg-light');
 			navbarCollapsible.classList.remove('navbar-light');
 			navbarCollapsible.classList.add('navbar-dark');
 			$('meta[name=theme-color]').attr('content', '#262437');
 		} else {
-			navbarCollapsible.classList.add('navbar-shrink');
+			navbarCollapsible.classList.remove('navbar-shrink');
 			navbarCollapsible.classList.add('bg-light');
 			navbarCollapsible.classList.add('navbar-light');
 			navbarCollapsible.classList.remove('navbar-dark');

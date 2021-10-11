@@ -15,8 +15,26 @@ body::-webkit-scrollbar {
 .bg-purple {
 	background: #262437;
 }
+.bg-black {
+	background: #000;
+}
+.text-pink {
+	color: #d63384;
+}
+.bg-pink {
+	background: #d63384;
+}
+.text-orange {
+	color: #fd7e14;
+}
+.text-teal {
+	color: #20c997;
+}
+.nav-item .active {
+	color: #6610f2 !important;
+	font-weight: 600;
+}
 .bg-custom {
-	/* background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(38,36,55,0.2) 100%), url("https://i.imgur.com/fJMaXjz.jpg"); */
 	background: #262437;
 	background-image: url("assets/bg.jpg");
 	background-position: center center;
@@ -26,11 +44,18 @@ body::-webkit-scrollbar {
 	transition: background 2s ease;
 }
 #mainNav.navbar-shrink {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 #mainNav.navbar-shrink .navbar-brand {
 	font-size: 1.5em;
+}
+#mainNav,
+.navbar-shrink,
+.navbar-brand,
+.nav-item,
+.nav-link {
+	transition: 0.5s ease;
 }
 .gb {
 	background-image: linear-gradient(to right, #499ead, #63409c);
